@@ -13,18 +13,40 @@ public class Concert extends Event{
     public Concert(String title, LocalDate date, int totalSeats, LocalTime time, BigDecimal price) {
         super(title, date, totalSeats);
         //TODO aggiungere validazione campi
-        this.time = time;
-        this.price = price;
+        this.time = validateTime(time);
+        this.price = validatePrice(price);
     }
 
     //METODI
+    //validazioni
+    private LocalTime validateTime(LocalTime t)
+            throws IllegalArgumentException {
+        if (t == null) {
+            //se l'orario è nullo lancio un'eccezione
+            throw new IllegalArgumentException("Time cannot be null!");
+        }
+        return t;
+    }
+    private BigDecimal validatePrice(BigDecimal p) throws IllegalArgumentException {
+        if (p == null) {
+            //se il prezzo è nullo lancio un'eccezione
+            throw new IllegalArgumentException("Price cannot be null");
+        }
+        if (p.compareTo(BigDecimal.ZERO) <= 0) {
+            //se il prezzo è < 0 lancio un'eccezione
+            throw new IllegalArgumentException("Price must be greater than zero");
+        }
+        return p;
+    }
     //setters
     //TODO aggiungere vals
-    public void setTime(LocalTime time) {
-        this.time = time;
+    public void setTime(LocalTime time)
+            throws IllegalArgumentException{
+        this.time = validateTime(time);
     }
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setPrice(BigDecimal price)
+            throws IllegalArgumentException{
+        this.price = validatePrice(price);
     }
     //getters
     public LocalTime getTime() {
