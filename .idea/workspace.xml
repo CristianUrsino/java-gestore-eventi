@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d562a594-22ef-4377-8250-11b031cec3b5" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/org/learning/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/learning/Main.java" afterDir="false" />
+    <list default="true" id="d562a594-22ef-4377-8250-11b031cec3b5" name="Changes" comment="Added basic main">
+      <change afterPath="$PROJECT_DIR$/src/org/learning/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +62,38 @@
       <option name="project" value="LOCAL" />
       <updated>1712647332640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Event class">
+      <option name="closed" value="true" />
+      <created>1712650483556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712650483556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added validation in Event class and docs of methods">
+      <option name="closed" value="true" />
+      <created>1712652699386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712652699386</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added basic main">
+      <option name="closed" value="true" />
+      <created>1712652742063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712652742063</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Added Event class" />
+    <MESSAGE value="Added validation in Event class and docs of methods" />
+    <MESSAGE value="Added basic main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic main" />
   </component>
 </project>

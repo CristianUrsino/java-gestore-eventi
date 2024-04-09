@@ -48,7 +48,7 @@ public class Event {
             throws IllegalArgumentException{
         this.title = validateTitle(title);
     }
-    public void setdate(LocalDate date)
+    public void setDate(LocalDate date)
             throws IllegalArgumentException{
         this.date = validateDate(date);
     }
@@ -56,7 +56,7 @@ public class Event {
     public String getTitle() {
         return title;
     }
-    public LocalDate getdate() {
+    public LocalDate getDate() {
         return date;
     }
     public int getTotalSeats() {
@@ -96,7 +96,7 @@ public class Event {
         //valido il numero inserito
         if((reservedSeats - numberCancelReservations) < 0){
             //se i posti prenotati - quelli che vengono attualmente cancellati sono minori di 0, solleva un'eccezione
-            throw new IllegalArgumentException("\nThe number of reservations is greater than the total number of seats");
+            throw new IllegalArgumentException("\nCanceled booked seats are greater than the total number of seats!");
         }
         //verifico che la data non sia passata
         date = validateDate(date);
@@ -105,13 +105,17 @@ public class Event {
     }
     @Override
     public String toString() {
+        String formattedDate = formatDate();
+        //ritorno una stringa completa di data formatta + titolo evento
+        return formattedDate + " - " + title;
+    }
+
+    protected String formatDate() {
         //prendo anno, mese formattato e giorno formattato
         int year = date.getYear();
         String month = String.format("%02d",date.getMonthValue());
         String day = String.format("%02d", date.getDayOfMonth());
-        //li unisco, formattando l'insieme
-        String formattedDate = day + "/" + month + "/" + year;
-        //ritorno una stringa completa di data formatta + titolo evento
-        return formattedDate + " - " + title;
+        //li restituisco, formattando l'insieme
+        return day + "/" + month + "/" + year;
     }
 }
