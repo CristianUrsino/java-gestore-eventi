@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d562a594-22ef-4377-8250-11b031cec3b5" name="Changes" comment="updated Main with Concert test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="d562a594-22ef-4377-8250-11b031cec3b5" name="Changes" comment="update Concert with validations">
       <change afterPath="$PROJECT_DIR$/src/org/learning/ScheduledEvents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/learning/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/Concert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/learning/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/learning/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712655549510</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update Concert with validations">
+      <option name="closed" value="true" />
+      <created>1712657880763</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712657880763</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +121,7 @@
     <MESSAGE value="Added basic main" />
     <MESSAGE value="Added Concert class and updated Event with new methods, fixed some errors" />
     <MESSAGE value="updated Main with Concert test" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Main with Concert test" />
+    <MESSAGE value="update Concert with validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Concert with validations" />
   </component>
 </project>
